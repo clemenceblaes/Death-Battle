@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "outrun";
+    src: url("font/Outrun.otf");
+   }
+
+body {
+    background-image: url("img/fond.jpg");
+    
+}
+
+a {
+    color: #E3E0E0;
+}
+
+a:hover {
+    color: #4E4848;
+}
+
+#player1 {
+    font-family: "outrun";
+    font-size: 56px;
+    text-align: center;
+    color: #BD1C1C;
+}
+
+#player2 {
+    font-family: "outrun";
+    font-size: 56px;
+    text-align: center;
+    color: #1B82E8;
+}
+
+
+
+h1 {
+    font-family: "outrun";
+    font-size: 72px;
+    text-align: center;
+    color: #E3E0E0;
+    margin-top: 20px;
+}
+
+.championchoice {
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 70px;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex;
+}
+
+.card:hover {   
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
+
+.card-body {
+    font-family: "outrun";
+    height: 200px;
+}
+
+.card-subtitle {
+    margin-top: -.375rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.btn-primary {
+    color: #E3E0E0;
+    background-color: #4E4848;
+    border-color: #E3E0E0;
+    border: dashed #E3E0E0 5px;    
+    text-align: center;
+    margin-top: 70px;
+    height: 100px;
+    font-size: 48px;
+    font-family: "outrun";
+}
+
+.btn-primary:hover {
+    color: #4E4848;
+    background-color: #E3E0E0;
+    border-color: #4E4848;
+    border: dashed #4E4848 5px;
+}
+
+.playbutton {
+    text-align: center;
+}
