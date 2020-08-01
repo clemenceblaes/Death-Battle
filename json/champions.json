@@ -1,0 +1,11 @@
+{
+    "playableCharacters" : 
+    [
+        {"id": 1, "name": "Morgana", "description" : "Ange déchu", "baseDamage": 10, "avatar" : "morgana.png", "avatarmini" : "morganamini.png"},
+        {"id": 2, "name": "Tahm-Kench", "description" : "Roi de la rivière", "baseDamage": 10, "avatar" : "tahm-kench.png", "avatarmini" : "tahm-kenchmini.png"},
+        {"id": 3, "name": "Neeko", "description": "Caméléon curieux", "baseDamage": 10, "avatar": "neeko.png", "avatarmini" : "neekomini.png"},
+        {"id": 4, "name": "Warwick", "description" : "Fureur déchainée", "baseDamage": 10, "avatar" : "warwick.png", "avatarmini" : "warwickmini.png"},
+        {"id": 5, "name": "Kaisa", "description" : "Fille du Néant", "baseDamage": 10, "avatar" : "kaisa.png", "avatarmini" : "kaisamini.png"},
+        {"id": 6, "name": "Pyke", "description" : "Eventreur des abysses", "baseDamage": 10, "avatar" : "pyke.png", "avatarmini" : "pykemini.png"}
+    ]
+}
