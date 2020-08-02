@@ -1,0 +1,9 @@
+{
+    "playableWeapons" : 
+    [
+        {"id": 1, "name": "Ouragan de Runaan", "damage": 30, "avatar" : "ouragan.png"},
+        {"id": 2, "name": "Couperet noir", "damage": 35, "avatar" : "couperet.png"},
+        {"id": 3, "name": "Marteau de Caulfield", "damage": 25, "avatar" : "marteau.png"},
+        {"id": 4, "name": "Faux spectrale", "damage": 25, "avatar" : "faux.png"}
+    ]
+}
