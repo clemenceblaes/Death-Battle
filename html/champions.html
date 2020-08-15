@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+  <head>
+     <title>Choix du personnage</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="../css/style2.css">
+     <script src="../js/champion_page/displayPlayableCharacters.js" async></script>
+     <script src="../js/champion_page/playerSelection.js" async></script>
+     <script src="../js/champion_page/lock.js" async></script>
+     <script src="../js/cummons/commons.js" async></script>
+     <meta charset="UTF-8">
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Choisissez votre champion :</h1>
+                <h2 id="player1">Joueur 1</h2>
+                <h2 id="player2">Joueur 2</h2>
+            </div>
+        </div>
+        <div id="championList" class="row championchoice"></div>
+
+        <div class="row">
+            <div class="col-lg-12 playbutton" id="lockbutton">
+                <button type="button" class="btn btn-primary" onClick="lock()">Verrouiller !</button>
+                </div>
+            <div class="col-lg-12 playbutton" id="playbutton">
+            <button type="button" class="btn btn-primary"><a href="../html/games.html">Jouer !</a></button>
+            </div>
+        </div>    
+
+    </div>
+ </body>
+
+ </html>
