@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "outrun";
+    src: url("font/Outrun.otf");
+   }
+
+body {
+    background-image: url("img/fond.jpg");
+    color: #E3E0E0;
+    font-family: "outrun";
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+a {
+    color: #E3E0E0; 
+}
+a:hover {
+    color: #4E4848;
+}
+
+.rules {
+    margin-top: 100px;
+}
+
+.fight {
+    margin-top: 50px;
+    font-size: 30px;
+
+}
+
+.main {
+    margin-top: 50px;
+    font-size: 30px;
+    padding-left: 15px;
+}
+
+.playbutton {
+    text-align: center;
+}
+
+.btn-primary {
+    color: #E3E0E0;
+    background-color: #4E4848;
+    border-color: #E3E0E0;
+    border: dashed #E3E0E0 5px;    
+    width: 300px;
+    text-align: center;
+    margin-top: 80px;
+    height: 100px;
+    font-size: 48px;
+    font-family: "outrun";
+    width: max-content;
+}
+
+.btn-primary:hover {
+    color: #4E4848;
+    background-color: #E3E0E0;
+    border-color: #4E4848;
+    border: dashed #4E4848 5px;
+}
+
+@media all and (max-device-width: 767px) {
+
+    .rules {
+        margin-top: 100px;
+    }
+
+    .fight {
+        margin-top: 100px;
+    }
+    
+    .playbutton {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .btn-primary {
+        color: #E3E0E0;
+        background-color: #4E4848;
+        border-color: #E3E0E0;
+        border: dashed #E3E0E0 5px;
+        width: 500px !important;
+        text-align: center;
+        margin-top: 0px;
+        height: 150px;
+        font-size: 48px;
+        font-family: "outrun";
+        width: max-content;
+        margin-bottom: 20px;
+    }
+}
