@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Death Battle</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/style4.css">
+  <script src="../js/game_page/displayWeapons.js" ></script>
+  <script src="../js/game_page/displayPlayer.js" ></script>
+  <script src="../js/game_page/BaseObject.js" ></script>
+  <script src="../js/game_page/ObjectManager.js" ></script>
+  <script src="../js/game_page/Player.js" ></script> 
+  <script src="../js/game_page/store.js" ></script>  
+  <script src="../js/game_page/battle.js" ></script> 
+  <script src="../js/javascript.js" ></script>
+  <script src="../js/cummons/commons.js" ></script>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 player1table">
+        <div class="row">
+        <h2 class="playernumber1" id="playernumber1"></h2>
+        <h2 class="player1champion">Votre personnage : <br/><span id="playerchampion1"></span></h2>
+        <img id ="player1avatar" src=""></img>
+        <h2 class="player1weapons">Votre arme :</h2>
+        <div id="playerweapons1"></div>
+      </div>
+      </div>
+
+        <div id = "board" class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12 plateau">
+          <table>
+            <tr>
+              <td id="00" class="open"></td>
+              <td id="01" class="open"></td>
+              <td id="02" class="open"></td>
+              <td id="03" class="open"></td>
+              <td id="04" class="open"></td>
+              <td id="05" class="open"></td>
+              <td id="06" class="open"></td>
+              <td id="07" class="open"></td>
+              <td id="08" class="open"></td>
+              <td id="09" class="open"></td>
+            </tr>
+            <tr>
+              <td id="10" class="open"></td>
+              <td id="11" class="open"></td>
+              <td id="12" class="open"></td>
+              <td id="13" class="open"></td>
+              <td id="14" class="open"></td>
+              <td id="15" class="open"></td>
+              <td id="16" class="open"></td>
+              <td id="17" class="open"></td>
+              <td id="18" class="open"></td>
+              <td id="19" class="open"></td>
+            </tr>
+            <tr>
+              <td id="20" class="open"></td>
+              <td id="21" class="open"></td>
+              <td id="22" class="open"></td>
+              <td id="23" class="open"></td>
+              <td id="24" class="open"></td>
+              <td id="25" class="open"></td>
+              <td id="26" class="open"></td>
+              <td id="27" class="open"></td>
+              <td id="28" class="open"></td>
+              <td id="29" class="open"></td>
+            </tr>
+            <tr>
+              <td id="30" class="open"></td>
+              <td id="31" class="open"></td>
+              <td id="32" class="open"></td>
+              <td id="33" class="open"></td>
+              <td id="34" class="open"></td>
+              <td id="35" class="open"></td>
+              <td id="36" class="open"></td>
+              <td id="37" class="open"></td>
+              <td id="38" class="open"></td>
+              <td id="39" class="open"></td>
+            </tr>
+            <tr>
+              <td id="40" class="open"></td>
+              <td id="41" class="open"></td>
+              <td id="42" class="open"></td>
+              <td id="43" class="open"></td>
+              <td id="44" class="open"></td>
+              <td id="45" class="open"></td>
+              <td id="46" class="open"></td>
+              <td id="47" class="open"></td>
+              <td id="48" class="open"></td>
+              <td id="49" class="open"></td>
+            </tr> 
+            <tr>
+              <td id="50" class="open"></td>
+              <td id="51" class="open"></td>
+              <td id="52" class="open"></td>
+              <td id="53" class="open"></td>
+              <td id="54" class="open"></td>
+              <td id="55" class="open"></td>
+              <td id="56" class="open"></td>
+              <td id="57" class="open"></td>
+              <td id="58" class="open"></td>
+              <td id="59" class="open"></td>
+            </tr> 
+            <tr> 
+              <td id="60" class="open"></td>
+              <td id="61" class="open"></td>
+              <td id="62" class="open"></td>
+              <td id="63" class="open"></td>
+              <td id="64" class="open"></td>
+              <td id="65" class="open"></td>
+              <td id="66" class="open"></td>
+              <td id="67" class="open"></td>
+              <td id="68" class="open"></td>
+              <td id="69" class="open"></td>
+            </tr> 
+            <tr> 
+              <td id="70" class="open"></td>
+              <td id="71" class="open"></td>
+              <td id="72" class="open"></td>
+              <td id="73" class="open"></td>
+              <td id="74" class="open"></td>
+              <td id="75" class="open"></td>
+              <td id="76" class="open"></td>
+              <td id="77" class="open"></td>
+              <td id="78" class="open"></td>
+              <td id="79" class="open"></td>
+            </tr> 
+            <tr> 
+              <td id="80" class="open"></td>
+              <td id="81" class="open"></td>
+              <td id="82" class="open"></td>
+              <td id="83" class="open"></td>
+              <td id="84" class="open"></td>
+              <td id="85" class="open"></td>
+              <td id="86" class="open"></td>
+              <td id="87" class="open"></td>
+              <td id="88" class="open"></td>
+              <td id="89" class="open"></td>
+            </tr> 
+            <tr> 
+              <td id="90" class="open"></td>
+              <td id="91" class="open"></td>
+              <td id="92" class="open"></td>
+              <td id="93" class="open"></td>
+              <td id="94" class="open"></td>
+              <td id="95" class="open"></td>
+              <td id="96" class="open"></td>
+              <td id="97" class="open"></td>
+              <td id="98" class="open"></td>
+              <td id="99" class="open"></td>
+            </tr> 
+          </table>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 playerTurn">
+              <h2 class="playerturn">Au tour du joueur :<p id = "player1turn" class="player1">Joueur 1</p><p id="player2turn" class="player2">Joueur 2</p></h2>   
+          </div>
+        </div>
+        </div>
+
+      <div id="weaponsList" class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
+        <div class="row">
+        <h2 class="weapons">Armes en jeu : </h2>
+        </div>
+      </div>
+        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 player2table">
+          <div class="row">
+          <h2 class="playernumber2" id="playernumber2"></h2>
+          <h2 class="player2champion">Votre personnage : <br/><span id="playerchampion2"></span></h2>
+          <img id ="player2avatar" src=""></img>
+          <h2 class="player2weapons">Votre arme :</h2>
+          <div id="playerweapons2"></div>></div>
+        </div>
+      </div>
+      </div>
+
+</body>
+
+</html>
